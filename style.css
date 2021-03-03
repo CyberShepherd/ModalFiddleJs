@@ -29,7 +29,7 @@
 }
 
 .modal.active {
-	display: block !important;
+	display: block;
 }
 
 .modal div.header {
