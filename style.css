@@ -1,0 +1,104 @@
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  background: rgba(0, 0 , 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+	pointer-events: all;
+	opacity: 1;
+}
+
+.modal {
+	display: none;
+	width: 390px;
+	min-height: 71px;
+	max-height: 700px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 5px;
+	border: 1px solid #f0f0f0;
+}
+
+.modal.active {
+	display: block !important;
+}
+
+.modal div.header {
+	width: 384px;
+	height: 24px;
+	background: gray;
+	color: white;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 3px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modal div.header button {
+	font-size: 100%;
+	font-family: inherit;
+	border: 0;
+	padding: 0;
+	background: 0;
+	color: inherit;
+	cursor: pointer;
+}
+
+.modal div.header button:hover {
+	color: white;
+	font-weight: 700;
+}
+
+.modal div.body {
+	width: 370px;
+	padding: 10px;
+	background: #f0f0f0;
+	color: black;
+	min-height: 16px;
+	text-align: justify;
+	font-size: 16px;
+}
+
+.modal div.function {
+	width: 385px;
+	min-height: 30px;
+	padding-top: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	background: inherit;
+}
+
+.modal div.function button {
+	min-height: 22px;
+	min-width: 34px;
+	max-width: 74px;
+	padding: 3px 20px;
+	outline: none;
+	border: 1px solid #f0f0f0;
+	background: rgba(205,205,205,1);
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.modal div.function button:hover {
+	filter: brightness(110%);
+}
+
+.r-exclamation:before {
+	content: '!';
+	color: cyan;
+	font-style: normal;
+}
